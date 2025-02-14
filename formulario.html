@@ -12,13 +12,15 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-    <!--Añadi una seccion y dento de la seccion puse el metodo form, dentro de form fieldset-->
+    <!--Añadi una seccion y dento de la seccion puse el metodo form-->
     <section>
-      <form action=""> <!--debe tener action en lugar de class y el metodo post-->
-        <!--para agrupar cuando pide nombre y edad-->
-        Nombre(s): <input type="text" placeholder="chiquitin" required><br> 
+      <!--debe tener tambien los atributos accion, metodo y destino-->
+      <!--agregue ids para que los jale en formulario.js-->
+      <form id="form" action="" method="POST" target="_blank" > 
+        <!--debe tener action en lugar de class y el metodo post-->
+        Nombre(s): <input id="nombre" type="text" placeholder="chiquitin" required><br> 
         <br>
-        Edad: <input type="number" name="" id="" placeholder="30" required><br>
+        Edad: <input id="edad" type="number" name="" id="" placeholder="30" required><br>
         <br>
         <!--les puse placeholder y required para que no se envie vacio-->
         Nacionalidad

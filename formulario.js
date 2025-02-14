@@ -1,5 +1,36 @@
-const formulario = document.querySelector("#form") //muchos declaraciones con var
+// const formulario = document.querySelector("#form") 
+//muchos declaraciones con var
 //cambiar todaas las var a let o const
+/**
+ * con esta línea querian acceder al formulatio html pero no es la sintaxis correcta, hay 3 metodos
+ *  getElementById() / document.forms / document.forms
+ * intentare con getElementById()
+ * */
+
+const form = document.getElementById("form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Perform custom validation logic
+    const nombre = document.getElementById("nombre").value;
+    const edad = document.getElementById("edad").value;
+
+    if (!nombreIsValid(nombre)) {
+        alert("Escribe un nombre por favor");
+        return;
+    }
+
+    if (edad.length < 2) {
+        alert("Escribe tu edad");
+        return;
+    }
+
+    // If validation passes, submit the form
+    form.submit();
+});
+
+
 
 
 // esta no es la sintaxis para hacer un formulario
