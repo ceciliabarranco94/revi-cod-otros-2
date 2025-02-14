@@ -12,7 +12,31 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
+    <!--Añadi una seccion y dento de la seccion puse el metodo form, dentro de form fieldset-->
+    <section>
+      <form action=""> <!--debe tener action en lugar de class y el metodo post-->
+        <!--para agrupar cuando pide nombre y edad-->
+        Nombre(s): <input type="text" placeholder="chiquitin" required><br> 
+        <br>
+        Edad: <input type="number" name="" id="" placeholder="30" required><br>
+        <br>
+        <!--les puse placeholder y required para que no se envie vacio-->
+        Nacionalidad
+        <select name="Nacionalidad" id="Nacionalidad"> <!--le cambie a español-->
+          <option value="ar">Argentina</option>
+          <option value="mx">Mexicana</option>
+          <option value="per">Peruana</option>
+          <option value="vnzl">Venezolana</option>
+        </select><br>
+
+        <br>
+
+        <input type="submit">
+
+      </form>
+    </section>
+
+  <!-- <form class="formulario"> 
     Nombre <input type="text" name="name" id="name">
     <br />
     Edad <input type="number" name="age" id="age">
@@ -27,7 +51,8 @@
     </select>
     <br />
     <input type="submit">
-  </form>
+  </form>--> 
+  <!--tiene class en lugar de action-->
 
   <div>
     <h2>Lista de invitados</h2>

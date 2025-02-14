@@ -6,21 +6,25 @@ const formulario = document.querySelector("#form") //muchos declaraciones con va
 // esta usando .onsubmit
 // en la documentación viene esta opción HTML # handler-onsubmit
 
-// en la documentación hay una función para hacer los formularios <form>: The Form element
-formulario.onsubmit = function(event) {  //esta linea da error en la consola 
+// en la documentación hay una función para hacer los formularios <form>: The Form element pero EN HTML
+
+/*formulario.onsubmit = function(event) { */ //esta linea da error en la consola 
+
 // Uncaught TypeError: Cannot set properties of null (setting 'onsubmit')
 //cambie e por event
  
 
-  event.prevent(); // la documentacion dice que esta es la sintaxis para prevent: preventDefault()
+  /*event.prevent(); */
+  // la documentacion dice que esta es la sintaxis para prevent: preventDefault()
 
   
-  let n = formulario.elements[0]
-  let e = formulario.elements[1] // esta linea da error en la consola
+  /*let n = formulario.elements[0]
+  let e = formulario.elements[1] */
+  // esta linea da error en la consola
   // a que se refiere con e
   // Identifier 'e' has already been declared (at formulario.js:10:7)
 
-  let na = formulario.elements[2]
+  /*let na = formulario.elements[2]
 
   let nombre = n.value
   let edad = e.value
@@ -108,4 +112,4 @@ elementoLista.appendChild(botonBorrar);
 // this.parentNode.style.display = 'none';
 botonBorrar.parentNode.remove()
   }
-}
+}*/
